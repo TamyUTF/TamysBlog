@@ -1,14 +1,42 @@
 .container {
-    color: red;
+
 }
 
 #nav-bar {
     position:fixed;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
-    background-color: #d2adfc;
+    background-image: linear-gradient(rgb(226, 67, 218),rgb(190, 35, 196), rgb(69, 16, 119),  rgb(32, 0, 51));
     width: 280px;
     height: 100%;
+    box-shadow: 1px 1px 3px #818181;
+}
+
+#author-info {
+    background-color: #fff;
+    color: #606060;
+    width: 100%;
+    margin: 0;
+}
+
+#about-me {
+    font-family: 'Reem Kufi', sans-serif;
+    margin: 5px auto;
+}
+
+.author-img {
+    border-radius: 50%;
+    border: 2px solid #606060;
+    shape-outside: circle(50% 10px 10px);
+    width: 200px;
+    margin: 5px auto;
+}
+
+.description {
+    text-align: center;
+    padding: 5px;
 }
 /*=================[MENU]=================*/
 
@@ -24,10 +52,12 @@ ol{
 #menu .pointer:hover {
     background-color: #f1f1f1;
     color: #000;
+    box-shadow: 1px 1px 5px #fff;
     transition: all 0.4s linear;
 }
 #menu .pointer:hover:before {
-    border-left: 35px solid #f1f1f1;
+    border-left: 25px solid #f1f1f1;
+    box-shadow: 1px 1px 5px #fff;
     transition: all 0.4s linear;
 }
 
@@ -38,14 +68,14 @@ ol{
 }
 
 #menu li p {
-    margin: 10px 50%;
-    font-size: 21pt;
+    margin: auto;
+    font-size: 18pt;
     position: relative;
 }
 
 .pointer {
     width: 280px;
-    height: 65px;
+    height: 40px;
     position: relative;
     background: #000;
 }
@@ -53,11 +83,11 @@ ol{
 .pointer:before {
     content: "";
     position: absolute;
-    right: -35px;
+    right: -25px;
     bottom: 0;
     width: 0;
     height: 0;
-    border-left: 35px solid #000;
-    border-top: 35px solid transparent;
-    border-bottom: 30px solid transparent;
+    border-left: 25px solid #000;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
 }
